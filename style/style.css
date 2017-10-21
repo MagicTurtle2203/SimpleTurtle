@@ -172,7 +172,7 @@ body {
   div.PizzaBanner {
       margin: none;
       padding: 40px 0px;
-      background-image: url("https://www.grimaldispizzeria.com/dbcwp/wp-content/uploads/2017/03/our-menu-1920.jpg");
+      background-image: url("../images/pizza_banner.jpg");
       background-size: cover;
       background-position: center center;
       height: 150px;
@@ -270,7 +270,7 @@ body {
       font-weight: 800;
   }
   #banner {
-      background-image: url("https://www.sheltonherald.com/wp-content/uploads/sites/33/2015/05/Baby_turtle.jpg");
+      background-image: url("../images/Baby_turtle.jpg");
       /*background-image: url("https://static1.squarespace.com/static/5486159de4b074841b303621/t/5913a4de6a49634ba5568356/1494459632534/");*/
       background-size: cover;
       background-position: center center;
