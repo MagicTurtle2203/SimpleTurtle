@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <head>
+        <title>Used Cars</title>
+        <link href="./style/style.css" type="text/css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Droid+Sans|Raleway|Kaushan+Script:100,400,500,600,800" rel="stylesheet">
+    </head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <body>
+        <div class="navbar">
+            <div class="dropdown">
+              <button class="dropbtn">=</button>
+              <div class="dropdown-content">
+                <button class="tablinks" onclick="openTab(event, 'Turtle')">Turtles</button>
+                <button class="tablinks" onclick="openTab(event, 'About')">About Me</button>
+                <button class="tablinks" onclick="openTab(event, 'OrderPizza')" id="defaultOpen">Order Pizza</button>
+                <button class="tablinks" onclick="openTab(event, 'RandomStuff')">Random Stuff</button>
+              </div>
+            </div>
+            <div id="pizza"></div><p>Rafferty's Pizza</p>
+        </div>    
+
+        <div id="Turtle" class="tabcontent"> 
+            <div id="banner">
+                <div class="content">
+                    <h1>Try to be like the turtle - at ease in your own shell.<br><strong>Bill Copeland</strong></h1>
+                </div>
+            </div>
+            <hr>
+            <div class="turtle_mainbody">
+                <h3>A Little About Turtles</h3>
+                <a href="https://en.wikipedia.org/wiki/Turtle"><span class="byline">FROM WIKIPEDIA, THE FREE ENCYCLOPEDIA</span></a>
+                <p>Turtles are <a href="https://en.wikipedia.org/wiki/Reptile">reptiles</a> of the <a href="https://en.wikipedia.org/wiki/Order_(biology)">order</a> <strong>Testudines</strong> (or <strong>Chelonii</strong>) characterised by a special <a href="https://en.wikipedia.org/wiki/Bone">bony</a> or <a href="https://en.wikipedia.org/wiki/Cartilage">cartilaginous</a> <a href="https://en.wikipedia.org/wiki/Animal_shell">shell</a> developed from their ribs and acting as a shield. "Turtle" may refer to the order as a whole (American English) or to fresh-water and sea-dwelling testudines (British English).</p>
+                <p>The order Testudines includes both extant (living) and <a href="https://en.wikipedia.org/wiki/Extinction">extinct</a> species. The earliest known members of this group date from <a href="http://tools.wmflabs.org/timescale/?Ma=157">157</a> <a href="https://en.wikipedia.org/wiki/Myr">million years ago</a>, making turtles one of the oldest reptile groups and a more ancient group than <a href="https://en.wikipedia.org/wiki/Snake">snakes</a> or <a href="https://en.wikipedia.org/wiki/Crocodilia">crocodilians</a>. Of the 327 known <a href="https://en.wikipedia.org/wiki/Species">species</a> alive today, some are highly <a href="https://en.wikipedia.org/wiki/Endangered_species">endangered</a>.</p>
+                <p>Turtles are <a href="https://en.wikipedia.org/wiki/Ectotherm">ectotherms</a>—animals commonly called <a href="https://en.wikipedia.org/wiki/Poikilotherm">cold-blooded</a>—meaning that their internal temperature varies according to the ambient environment. However, because of their high metabolic rate, <a href="https://en.wikipedia.org/wiki/Leatherback_sea_turtle">leatherback sea turtles</a> have a body temperature that is noticeably higher than that of the surrounding water.</p>
+                <p>Turtles are classified as <a href="https://en.wikipedia.org/wiki/Amniote">amniotes</a>, along with other reptiles, birds, and mammals. Like other amniotes, turtles breathe air and do not lay eggs underwater, although many species live in or around water.</p>
+            </div>
+        </div>
+        
+        <div id="About" class="tabcontent">
+            <div class="about_mainbody">
+                <h3>About Me</h3>
+                <p>Hi! My name is Rafferty and I'm a student at Gretchen Whitney High School who's currently taking the AP Computer Science Princples Course.</p>
+                <p>Some of my interests are:</p>
+                <p id="interests">(try clicking them!)</p>
+                <ul>
+                    <li><button class="bc-list">Building computers</button></li>
+                    <p id="computerparts-p">Here's the specifications of my computer:</p>
+                    <a href="#"><img title="Intel Core i7 7700k" class="computerparts" src="https://images-na.ssl-images-amazon.com/images/I/51zkoInLSiL.jpg"></a>
+                    <a href="#"><img title="Cooler Master Hyper 212 EVO" class="computerparts" src="https://cdn.pcpartpicker.com/static/forever/images/product/ddea57de9797549e80d05fb3acb2e83d.med.256p.jpg"></a>
+                    <a href="#"><img title="Gigabyte GA-Z270-Gaming K3" class="computerparts" src="https://cdn.pcpartpicker.com/static/forever/images/product/6793fb3e7a72124492e21a9d76b5a61c.256p.jpg"></a>
+                    <a href="#"><img title="Crucial Ballistix Sport LT 16GB DDR4" class="computerparts" src="https://images-na.ssl-images-amazon.com/images/I/41gmAwMOskL.jpg"></a>
+                    <a href="#"><img title="Crucial M4 128GB SSD" class="computerparts" src="http://ecx.images-amazon.com/images/I/41iBI%2BQ2gkL.jpg"></a>
+                    <a href="#"><img title="Western Digital Caviar Green 3TB HDD" class="computerparts" src="http://ecx.images-amazon.com/images/I/51-6%2BL6zT8L.jpg"></a>
+                    <a href="#"><img title="Toshiba P300 2TB HDD" class="computerparts" src="https://houseofwhitley.co/wp-content/uploads/2017/07/TOSHIBA-P300-3TB-Desktop-Hard-Drive-7200-RPM-64MB-Cache-SATA-6.0Gbs-2-600x600.jpg"></a>
+                    <a href="#"><img title="MSI GeForce GTX 770 2GB TWIN FROZR" class="computerparts" src="https://www.msi.com/asset/resize/image/global/product/five_pictures1_2863_20130530190256.png62405b38c58fe0f07fcef2367d8a9ba1/1024.png"></a>
+                    <a href="#"><img title="NZXT S340 (Black) ATX Mid Tower Case" class="computerparts" src="https://cdn.pcpartpicker.com/static/forever/images/product/d4745ae04fec5a8861f24130cccc9eda.256p.jpg"></a>
+                    <a href="#"><img title="Corsair CXM 750W Semi-Modular ATX Power Supply" class="computerparts" src="https://cdn.pcpartpicker.com/static/forever/images/product/23a8f923c23d6de30026d889136bf175.256p.jpg"></a>
+                    <li><button>Computer programming</button></li>
+                    <li><button class="vg-list">Video games</button></li>
+                    <a href="https://playhearthstone.com/"><img class="videogames" title="Hearthstone" src="https://i.imgur.com/zz1Bcek.png"></a> 
+                    <a href="https://osu.ppy.sh/"><img class="videogames" title="osu!" src="https://i.ppy.sh/3ae9b08499c5b07e2c189aadc419aba4281211ce/687474703a2f2f772e7070792e73682f632f63392f4c6f676f2e706e67"></a>
+                    <a href="https://www.rocketleague.com/"><img class="videogames" title="Rocket League" src="https://vignette4.wikia.nocookie.net/monstergirlencyclopedia/images/2/2c/Rocket_league_logo.png/revision/latest?cb=20170101033444"></a>
+                    <li><button>Learning foreign languages</button></li>
+                    <li><button>Drinking water and ice lemon tea</button></li>
+                    <li><button>Biking</button></li>
+                </ul>
+            </div>
+        </div>
+        
+        <div id="OrderPizza" class="tabcontent">
+        <div class="PizzaBanner">
+            <h1>Fresh Pizza</h1>
+        </div>
+            <span><h1>Traditionally Baked Pizza</h1></span>
+            <p>At Rafferty's Pizza, we don't even have freezers! We make our dough from scratch daily, hand-slice our veggies and freshly-grate our 100% whole-milk mozzarella, provolone, and cheddar cheeses each morning. It's a difference everyone can taste.</p>
+            <div class="menu">
+            <ul class="product-list columns-3">
+            <li>
+                <a href="#"><img src="http://dynl.mktgcdn.com/p/BqVXZELl1bpP82hnfZIUZJsRE3fh3cwTNK2-FvIqn5U/1538x776.png"></a>                   <h3><a href="#">Supreme</a></h3>
+            </li>
+            <li>
+                <a href="#"><img src="https://www.cicis.com/media/1137/pizza_trad_alfredo.png"></a> 
+                <h3><a href="#">Alfredo</a></h3>
+            </li>
+            <li>
+                <a href="#"><img src="https://www.cicis.com/media/1139/pizza_trad_pepperoni_sm.png"></a>
+                <h3><a href="#">Pepperoni</a></h3>
+            </li>
+            <li>
+                <a href="#"><img src="https://www.cicis.com/media/1175/pizza_trad_meateater_sm.png"></a>
+                <h3><a href="#">Meat Eater</a></h3>
+            </li>
+            <li>
+                <a href="#"><img src="https://www.cicis.com/media/1177/pizza_trad_cheese_sm.png"></a>
+                <h3><a href="#">Cheese</a></h3>
+            </li>
+            <li>
+                <a href="#"><img src="https://www.cicis.com/media/1173/pizza_trad_veggie_sm.png"></a>
+                <h3><a href="#">Veggie</a></h3>
+            </li>
+            </ul>
+            </div>
+        </div>
+        
+        <div id="RandomStuff" class="tabcontent">
+            <h3>Random Stuff</h3>
+            <h3><a href="https://codehs.com/share/RLx1Xva4P4k5N9Qt8TGK">Watch Karel paint a picture!<br>(You should probably set it to full speed)</a></h3>
+            <img onmouseover="bigImg(this)" onmouseout="normalImg(this)" src="http://bestanimations.com/Animals/Reptiles/turtles/cute-turtle-animated-gif-14.gif" height=176px width=300px>
+            <p>Hover over the image!</p>
+            <p id="japanese">日本語を使ってみて</p>
+            <p id="chinese">你好，傅含！</p>
+            </div>
+        
+        <h4 id='date'></h3>
+            
+        <script>
+            //clicks on the default tab to have it open when the page loads
+            document.getElementById("defaultOpen").click();
+            //jquery
+            $(document).ready(function(){
+                $(".vg-list").click(function(){
+                    $(".videogames").fadeToggle("normal");
+                });
+                $(".bc-list").click(function(){
+                    $(".computerparts").fadeToggle("normal");
+                    $("#computerparts-p").fadeToggle("normal");
+                });
+            });
+            // enlarges the image by the amount of pixels defined
+            function bigImg(x) {
+                x.style.height = "352px";
+                x.style.width = "600px";
+            }
+            // shrinks the image by the amount of pixels defined
+            function normalImg(x) {
+                x.style.height = "176px";
+                x.style.width = "300px";
+            }
+            //gets all the tabs and tablinks and hides the ones that aren't active
+            function openTab(evt, tabName) {
+                var i, tabcontent, tablinks;
+                tabcontent = document.getElementsByClassName("tabcontent");
+                for (i = 0; i < tabcontent.length; i++) {
+                    tabcontent[i].style.display = "none";
+                }
+                tablinks = document.getElementsByClassName("tablinks");
+                for (i = 0; i < tablinks.length; i++) {
+                    tablinks[i].className = tablinks[i].className.replace(" active", "");
+                }
+                document.getElementById(tabName).style.display = "block";
+                evt.currentTarget.className += " active";
+            }
+            //gets the current date and displays it at the bottom of the page
+            function getDate() {
+             let today = new Date();
+                let year = today.getFullYear();
+                let month = today.getMonth();
+                let date = today.getDate();
+                let day = today.getDay();
+                let hours = today.getHours();
+                let minutes = today.getMinutes();
+                let seconds = today.getSeconds();
+                let ampm;
+                if (hours <= 12) {
+                  ampm = 'AM';
+                } else if (hours > 12) {
+                  ampm = 'PM';
+                }
+                if (hours > 12) {
+                    hours = hours - 12;
+                }
+                if (minutes < 10) {
+                    minutes = '0'+minutes.toString();
+                }
+                if (seconds < 10) {
+              	    seconds = '0'+seconds.toString();
+                }
+                let daylist = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+            	let monthlist = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+                document.getElementById('date').innerHTML = `It is now ${hours}\:${minutes}\:${seconds} ${ampm} on ${daylist[day]}, ${monthlist[month]} ${date}, ${year}`;
+            }
+            setInterval(getDate, 1000);
+        </script>
+        <div id="preload">
+           <img src="http://dynl.mktgcdn.com/p/BqVXZELl1bpP82hnfZIUZJsRE3fh3cwTNK2-FvIqn5U/1538x776.png" width="1" height="1" alt="Image 01" />
+           <img src="https://www.cicis.com/media/1137/pizza_trad_alfredo.png" width="1" height="1" alt="Image 02" />
+           <img src="https://www.cicis.com/media/1139/pizza_trad_pepperoni_sm.png" width="1" height="1" alt="Image 03" />
+           <img src="https://www.cicis.com/media/1175/pizza_trad_meateater_sm.png" width="1" height="1" alt="Image 04" />
+           <img src="https://www.cicis.com/media/1177/pizza_trad_cheese_sm.png" width="1" height="1" alt="Image 05" />
+           <img src="https://www.cicis.com/media/1173/pizza_trad_veggie_sm.png" width="1" height="1" alt="Image 06" />
+           <img src="http://tony.pizza/wp-content/uploads/2017/01/28us51e-8.png" width="1" height="1"/>
+        </div>
+    </body>
+</html>
