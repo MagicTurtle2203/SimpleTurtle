@@ -141,9 +141,6 @@ body {
   .vg-list, .bc-list {
       cursor: pointer;
   }
-  .computerparts:hover {
-     /*background-color: #ccc;*/
-  }
   #computerparts-p {
       padding: 0;
       padding-top: 5px;
@@ -332,9 +329,5 @@ body {
       -ms-user-select: none;
       user-select: none;
       cursor:default;
-  }
-  div#preload {
-      visibilty: hidden;
-      left: -999em;
   }
   
