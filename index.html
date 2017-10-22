@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <title>Used Cars</title>
         <link href="./style/style.css" type="text/css" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Droid+Sans|Raleway|Kaushan+Script:100,400,500,600,800" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Droid+Sans|Raleway:100,400,500,600,800" rel="stylesheet">
     </head>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <body>
@@ -13,12 +15,11 @@
               <button class="dropbtn">=</button>
               <div class="dropdown-content">
                 <button class="tablinks" onclick="openTab(event, 'Turtle')"  id="defaultOpen">Turtles</button>
+                <button><a href="./pizza/menu.html">Order Pizza</a></button>
                 <button class="tablinks" onclick="openTab(event, 'About')">About Me</button>
-                <button class="tablinks" onclick="openTab(event, 'OrderPizza')">Order Pizza</button>
                 <button class="tablinks" onclick="openTab(event, 'RandomStuff')">Random Stuff</button>
               </div>
             </div>
-            <div id="pizza"></div><p>Rafferty's Pizza</p>
         </div>    
 
         <div id="Turtle" class="tabcontent"> 
@@ -68,42 +69,6 @@
             </div>
         </div>
         
-        <div id="OrderPizza" class="tabcontent">
-        <div class="PizzaBanner">
-            <h1>Fresh Pizza</h1>
-        </div>
-            <span><h1>Traditionally Baked Pizza</h1></span>
-            <p>At Rafferty's Pizza, we don't even have freezers! We make our dough from scratch daily, hand-slice our veggies and freshly-grate our 100% whole-milk mozzarella, provolone, and cheddar cheeses each morning. It's a difference everyone can taste.</p>
-            <div class="menu">
-            <ul class="product-list columns-3">
-            <li>
-                <a href="#"><img src="./images/pizza_trad_supreme.png"></a>
-                <h3><a href="#">Supreme</a></h3>
-            </li>
-            <li>
-                <a href="#"><img src="./images/pizza_trad_alfredo.png"></a> 
-                <h3><a href="#">Alfredo</a></h3>
-            </li>
-            <li>
-                <a href="#"><img src="./images/pizza_trad_pepperoni.png"></a>
-                <h3><a href="#">Pepperoni</a></h3>
-            </li>
-            <li>
-                <a href="#"><img src="./images/pizza_trad_meateater.png"></a>
-                <h3><a href="#">Meat Eater</a></h3>
-            </li>
-            <li>
-                <a href="#"><img src="./images/pizza_trad_cheese.png"></a>
-                <h3><a href="#">Cheese</a></h3>
-            </li>
-            <li>
-                <a href="#"><img src="./images/pizza_trad_veggie.png"></a>
-                <h3><a href="#">Veggie</a></h3>
-            </li>
-            </ul>
-            </div>
-        </div>
-        
         <div id="RandomStuff" class="tabcontent">
             <h3>Random Stuff</h3>
             <h3><a href="https://codehs.com/share/RLx1Xva4P4k5N9Qt8TGK">Watch Karel paint a picture!<br>(You should probably set it to full speed)</a></h3>
@@ -113,7 +78,7 @@
             <p id="chinese">你好，傅含！</p>
             </div>
         
-        <h4 id='date'></h3>
+        <h4 id='date'></h4>
             
         <script type="text/javascript">
             //clicks on the default tab to have it open when the page loads
