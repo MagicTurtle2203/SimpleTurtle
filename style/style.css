@@ -15,7 +15,7 @@ body {
       z-index: 2;
   }
   #pizza {
-      background-image: url("http://tony.pizza/wp-content/uploads/2017/01/28us51e-8.png");
+      background-image: url("../images/pizza_icon.png");
       background-size: cover;
       background-position: center center;
       width: 40px;
@@ -163,7 +163,7 @@ body {
       position: relative;
       display: block;
       padding: 40px;
-      background-image: url("http://atextures.com/wp-content/uploads/2014/08/Paper-Grunge-Background-41.jpg");
+      background-image: url("../images/old_paper_background.jpg");
       background-size: cover;
       overflow: scroll;
       text-align: center;
