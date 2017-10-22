@@ -1,4 +1,4 @@
-#OrderPizza {
+body {
     position: relative;
     display: block;
     padding: 40px;
@@ -7,6 +7,66 @@
     overflow: hidden;
     text-align: center;
     font-family: "Raleway", sans-serif;
+}
+.navbar {
+    overflow: hidden;
+    background-color: #FFFFFF;
+    border-bottom: 1px solid LightGrey;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 2;
+    left: 0;
+}
+#pizza {
+    background-image: url("../images/pizza_icon.png");
+    background-size: cover;
+    background-position: center center;
+    width: 40px;
+    height: 40px;
+    position: fixed;
+    display: inline-box;
+    left: 8px;
+    top: 8px;
+}
+.navbar p {
+    position: relative;
+    float: left;
+    text-align: left;
+    display: inline-block;
+    padding: 15px 53px;
+    font-family: "Droid Sans", sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    color: black;
+    letter-spacing: 0.02em;
+}
+.homebutton {
+    float: right;
+    overflow: hidden;
+    display: inline-block;
+}
+.homebutton {
+    font-size: 18px;
+    font-weight: 400;
+    outline: none;
+    border: none;
+    border-left: 1px solid lightgrey;
+    border-right: 1px solid LightGrey;
+    color: #000000;
+    width: 60px;
+    height: 51px;
+    padding: 14px 16px;
+    background-color: inherit;
+}
+.homebutton:hover {
+    background-color: red;
+}
+.homebutton {
+    background-image: url("../images/home_icon.png");
+    background-size: 30px 30px;
+    background-repeat: no-repeat;
+    background-position: center center;
 }
 div.PizzaBanner {
     margin: none;
@@ -29,12 +89,12 @@ div.PizzaBanner h1 {
     margin: 0 auto;
     text-shadow: 2px 2px 2px rgba(0, 0, 0, 1);
 }
-#OrderPizza span {
+body span {
     text-align: center;
     display: inline-block;
     position: relative;
 }
-#OrderPizza span:before, #OrderPizza span:after {
+body span:before, body span:after {
     content: "";
     position: absolute;
     top: 50%;
@@ -42,15 +102,15 @@ div.PizzaBanner h1 {
     height: 1px;
     background: red;
 }
-#OrderPizza span:before {
+body span:before {
     right: 100%;
     margin-right: 15px;
 }
-#OrderPizza span:after {
+body span:after {
     left: 100%;
     margin-left: 15px;
 }
-#OrderPizza p {
+body p {
     min-width: 300px;
     max-width: 800px;
     margin: 0 auto;
