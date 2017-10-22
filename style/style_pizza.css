@@ -58,6 +58,7 @@ body {
     height: 51px;
     padding: 14px 16px;
     background-color: inherit;
+    cursor: pointer;
 }
 .homebutton:hover {
     background-color: red;
