@@ -85,7 +85,7 @@ div.PizzaBanner h1 {
     font-family: "Kaushan Script", cursive;
     text-align: center;
     position: relative;
-    top: 30px;
+    padding: 20px 0;
     width: auto;
     margin: 0 auto;
     text-shadow: 2px 2px 2px rgba(0, 0, 0, 1);

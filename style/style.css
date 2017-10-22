@@ -87,6 +87,9 @@ body {
   .dropdown-content button:hover, .dropdown-content input:hover {
       background-color: #ddd;
   }
+  .dropdown-content input:hover {
+      color: red;
+  }
   .dropdown:hover .dropdown-content {
       display: block;
   }
