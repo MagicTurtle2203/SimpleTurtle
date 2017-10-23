@@ -112,9 +112,6 @@ body {
 .dropdown:hover .dropdown-content {
   display: block;
 }
-#hidden {
-    display: none;
-}
 div.turtle_mainbody, div.about_mainbody {
   margin: 0 auto;
   padding: 40px;
@@ -261,7 +258,7 @@ div.about_mainbody button {
 ::-webkit-scrollbar-thumb {
   background: LightGrey;
 }
-#banner .content h1, .navbar p {
+#banner .content h1, .navbar p, #hidden {
   -webkit-touch-callout: none;
   -webkit-user-select: none;
   -khtml-user-select: none;
