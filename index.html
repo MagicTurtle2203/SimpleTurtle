@@ -114,9 +114,11 @@
             tablinks = document.getElementsByClassName("tablinks");
             for (i = 0; i < tablinks.length; i++) {
                 tablinks[i].className = tablinks[i].className.replace(" active", "");
+                tablinks[i].removeAttribute("id")
             }
             document.getElementById(tabName).style.display = "block";
             evt.currentTarget.className += " active";
+            evt.currentTarget.setAttribute("id", "hidden");
         }
         //gets the current date and displays it at the bottom of the page
         function getDate() {
