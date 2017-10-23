@@ -235,12 +235,9 @@ body {
   ::-webkit-scrollbar {
       width: 8px;
       background: transparent;
-      padding: none;
-      margin: none;
   }
   ::-webkit-scrollbar-thumb {
       background: LightGrey;
-      opacity: 60%;
   }
   #banner .content h1, .navbar p {
       -webkit-touch-callout: none;
