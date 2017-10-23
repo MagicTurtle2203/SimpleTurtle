@@ -26,15 +26,34 @@ body {
     top: 8px;
 }
 .navbar p {
-  float: center;
-  text-align: center;
-  display: inline-block;
-  padding: 0 53px;
-  font-family: "Droid Sans", sans-serif;
-  font-weight: 600;
-  font-size: 16px;
-  color: black;
-  letter-spacing: 0.02em;
+    float: center;
+    text-align: center;
+    display: inline-block;
+    padding: 0 53px;
+    font-family: "Droid Sans", sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    color: black;
+    letter-spacing: 0.02em;
+}
+.navbar input {
+    float: right;
+    font-size: 18px;
+    font-weight: 400;
+    outline: none;
+    border: none;
+    border-left: 1px solid lightgrey;
+    color: #000000;
+    width: 135px;
+    height: 51px;
+    padding: 14px 16px;
+    background-color: inherit;
+    text-align: center;
+    position: relative;
+}
+.navbar input:hover {
+    color: red;
+    cursor: pointer;
 }
 .dropdown {
   float: right;
