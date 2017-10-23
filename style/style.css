@@ -4,248 +4,251 @@ body {
     padding: 0;
     overflow: scroll;
     overflow-x: hidden;
-  }
-  .navbar {
-      overflow: hidden;
-      background-color: #FFFFFF;
-      border-bottom: 1px solid LightGrey;
-      position: fixed;
-      top: 0;
-      width: 100%;
-      z-index: 2;
-  }
-  #pizza {
-      background-image: url("../images/pizza_icon.png");
-      background-size: cover;
-      background-position: center center;
-      width: 40px;
-      height: 40px;
-      position: fixed;
-      display: inline-box;
-      left: 8px;
-      top: 8px;
-  }
-  .navbar p {
-      float: center;
-      text-align: center;
-      display: inline-block;
-      padding: 0 53px;
-      font-family: "Droid Sans", sans-serif;
-      font-weight: 600;
-      font-size: 16px;
-      color: black;
-      letter-spacing: 0.02em;
-  }
-  .dropdown {
-      float: right;
-      overflow: hidden;
-      display: inline-block;
-  }
-  .dropdown .dropbtn {
-      font-size: 18px;
-      font-weight: 400;
-      outline: none;
-      border: none;
-      border-left: 1px solid lightgrey;
-      border-right: 1px solid LightGrey;
-      color: #000000;
-      width: 60px;
-      height: 51px;
-      padding: 14px 16px;
-      background-color: inherit;
-  }
-  .dropdown:hover .dropbtn {
-      background-color: red;
-  }
-  .dropdown-content {
-      display: none;
-      position: fixed;
-      right: 0;
-      background-color: #f9f9f9;
-      min-width: 160px;
-      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-      z-index: 3;
-  }
-  .dropdown-content button, .dropdown-content input {
-      background-color: inherit;
-      color: black;
-      display: block;
-      float: none;
-      border: 1px solid LightGrey;
-      width: 100%;
-      text-align: right;
-      outline: none;
-      cursor: pointer;
-      padding: 14px 16px;
-      transition: 0.3s;
-      font-size: 17px;
-  }
-  .dropdown-content a {
-      text-decoration: none;
-      color: #000000;
-  }
-  .dropdown-content button:hover, .dropdown-content input:hover {
-      background-color: #ddd;
-  }
-  .dropdown-content input:hover {
-      color: red;
-  }
-  .dropdown:hover .dropdown-content {
-      display: block;
-  }
-  div.turtle_mainbody, div.about_mainbody {
-      margin: 0 auto;
-      padding: 40px;
-      min-width: 300px;
-      height: auto;
-      font-family: 'Raleway', sans-serif;
-  }
-  div.turtle_mainbody {
-      text-align: center;
-      max-width: 850px;
-  }
-  div.turtle_mainbody h3 {
-      color: #6c77d4;
-      text-transform: uppercase;
-      font-size: 22px;
-      font-weight: 600;
-      padding: 0px 10px;
-  }
-  div.turtle_mainbody p {
-      font-size: 18px;
-      text-align: left;
-  }
-  div.turtle_mainbody a {
-      color: #000000;
-      font-size: 15px;
-      font-weight: 500;
-      text-transform: uppercase;
-      text-decoration: none;
-      letter-spacing: 0.05em;
-  }
-  div.about_mainbody button {
-      border: none;
-      outline: none;
-      padding: none;
-      background-color: #ffffff;
-      font-size: 16px;
-      font-family: "Raleway", sans-serif;
-  }
-  #interests {
-      padding: none;
-      margin: none;
-      font-size: 10px;
-      font-weight: 400;
-  }
-  .computerparts, .videogames {
-      height: 40px;
-      width: 40px;
-      border: 1px solid LightGrey;
-      border-radius: 4px;
-      display: none;
-      object-fit: contain;
-  }
-  .vg-list, .bc-list {
-      cursor: pointer;
-  }
-  #computerparts-p {
-      padding: 0;
-      padding-top: 5px;
-      padding-bottom: 5px;
-      margin: 0;
-      display: none;
-      font-size: 12px;
-  }
-  .computerparts:hover {
-      background-color: #ccc;
-  }
-  .videogames:hover {
-      background-color: #ccc;
-  }
-  .byline {
-      border-bottom: 1px solid LightGrey;
-      border-top: 1px solid LightGrey;
-      color: LightGrey;
-      font-size: 10px;
-      font-weight: 400;
-  }
-  #RandomStuff h3, #RandomStuff p {
-      font-family: "Raleway", sans-serif;
-  }
-  #RandomStuff a {
-      color: blue;
-      text-decoration: none;
-  }
-  #RandomStuff a:hover {
-      color: red;
-  }
-  #japanese {
-      font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", sans-serif;
-      font-weight: 800;
-      letter-spacing: 0em;
-  }
-  #chinese {
-      font-family: "Microsoft JhengHei UI","Microsoft JhengHei",Pmingliu,"Segoe UI","Segoe UI Web Regular","Segoe UI Symbol","Helvetica Neue","BBAlpha Sans","S60 Sans",Arial,sans-serif;
-      font-weight: 800;
-  }
-  #banner {
-      background-image: url("../images/Baby_turtle.jpg");
-      /*background-image: url("https://static1.squarespace.com/static/5486159de4b074841b303621/t/5913a4de6a49634ba5568356/1494459632534/");*/
-      background-size: cover;
-      background-position: center center;
-      height: 450px;
-      width: 100%;
-  }
-  #banner .content h1 {
-      color: #ffffff;
-      font-size: 50px;
-      border: 3px dotted white;
-      font-family: "Raleway", sans-serif;
-      text-align: center;
-      position: relative;
-      top: 100px;
-      width: auto;
-      min-width: 350px;
-      max-width: 450px;
-      margin: 0 auto;
-  }
-  #date {
-      font-family: 'Raleway', sans-serif;
-      margin: 5px 0 5px 5px;
-      color: #615652;
-      font-size: 16px;
-      font-weight: 400;
-  }
-  .tabcontent {
-      display: none;
-      padding: 6px 12px;
-      border: 1px solid #ccc;
-      border-top: none;
-      -webkit-animation: fadeEffect 1s;
-      animation: fadeEffect 1s; 
-  }
-  @-webkit-keyframes fadeEffect {
-      from {opacity: 0.2;}
-      to {opacity: 1;}
-  }
-  @keyframes fadeEffect {
-      from {opacity: 0.2;}
-      to {opacity: 1;}
-  }
-  ::-webkit-scrollbar {
-      width: 8px;
-      background: transparent;
-  }
-  ::-webkit-scrollbar-thumb {
-      background: LightGrey;
-  }
-  #banner .content h1, .navbar p {
-      -webkit-touch-callout: none;
-      -webkit-user-select: none;
-      -khtml-user-select: none;
-      -moz-user-select: none;
-      -ms-user-select: none;
-      user-select: none;
-      cursor:default;
-  }
-  
+}
+.navbar {
+    overflow: hidden;
+    background-color: #FFFFFF;
+    border-bottom: 1px solid LightGrey;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 2;
+}
+#pizza {
+    background-image: url("../images/pizza_icon.png");
+    background-size: cover;
+    background-position: center center;
+    width: 40px;
+    height: 40px;
+    position: fixed;
+    display: inline-box;
+    left: 8px;
+    top: 8px;
+}
+.navbar p {
+  float: center;
+  text-align: center;
+  display: inline-block;
+  padding: 0 53px;
+  font-family: "Droid Sans", sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  color: black;
+  letter-spacing: 0.02em;
+}
+.dropdown {
+  float: right;
+  overflow: hidden;
+  display: inline-block;
+}
+.dropdown .dropbtn {
+  font-size: 18px;
+  font-weight: 400;
+  outline: none;
+  border: none;
+  border-left: 1px solid lightgrey;
+  border-right: 1px solid LightGrey;
+  color: #000000;
+  width: 60px;
+  height: 51px;
+  padding: 14px 16px;
+  background-color: inherit;
+}
+.dropdown:hover .dropbtn {
+  background-color: red;
+}
+.dropdown-content {
+  display: none;
+  position: fixed;
+  right: 0;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 3;
+}
+.dropdown-content button, .dropdown-content input {
+  background-color: inherit;
+  color: black;
+  display: block;
+  float: none;
+  border: 1px solid LightGrey;
+  width: 100%;
+  text-align: right;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+.dropdown-content a {
+  text-decoration: none;
+  color: #000000;
+}
+.dropdown-content button:hover, .dropdown-content input:hover {
+  background-color: #ddd;
+}
+.dropdown-content input:hover {
+  color: red;
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+#hidden {
+    display: none;
+}
+div.turtle_mainbody, div.about_mainbody {
+  margin: 0 auto;
+  padding: 40px;
+  min-width: 300px;
+  height: auto;
+  font-family: 'Raleway', sans-serif;
+}
+div.turtle_mainbody {
+  text-align: center;
+  max-width: 850px;
+}
+div.turtle_mainbody h3 {
+  color: #6c77d4;
+  text-transform: uppercase;
+  font-size: 22px;
+  font-weight: 600;
+  padding: 0px 10px;
+}
+div.turtle_mainbody p {
+  font-size: 18px;
+  text-align: left;
+}
+div.turtle_mainbody a {
+  color: #000000;
+  font-size: 15px;
+  font-weight: 500;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 0.05em;
+}
+div.about_mainbody button {
+  border: none;
+  outline: none;
+  padding: none;
+  background-color: #ffffff;
+  font-size: 16px;
+  font-family: "Raleway", sans-serif;
+}
+#interests {
+  padding: none;
+  margin: none;
+  font-size: 10px;
+  font-weight: 400;
+}
+.computerparts, .videogames {
+  height: 40px;
+  width: 40px;
+  border: 1px solid LightGrey;
+  border-radius: 4px;
+  display: none;
+  object-fit: contain;
+}
+.vg-list, .bc-list {
+  cursor: pointer;
+}
+#computerparts-p {
+  padding: 0;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin: 0;
+  display: none;
+  font-size: 12px;
+}
+.computerparts:hover {
+  background-color: #ccc;
+}
+.videogames:hover {
+  background-color: #ccc;
+}
+.byline {
+  border-bottom: 1px solid LightGrey;
+  border-top: 1px solid LightGrey;
+  color: LightGrey;
+  font-size: 10px;
+  font-weight: 400;
+}
+#RandomStuff h3, #RandomStuff p {
+  font-family: "Raleway", sans-serif;
+}
+#RandomStuff a {
+  color: blue;
+  text-decoration: none;
+}
+#RandomStuff a:hover {
+  color: red;
+}
+#japanese {
+  font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", sans-serif;
+  font-weight: 800;
+  letter-spacing: 0em;
+}
+#chinese {
+  font-family: "Microsoft JhengHei UI","Microsoft JhengHei",Pmingliu,"Segoe UI","Segoe UI Web Regular","Segoe UI Symbol","Helvetica Neue","BBAlpha Sans","S60 Sans",Arial,sans-serif;
+  font-weight: 800;
+}
+#banner {
+  background-image: url("../images/Baby_turtle.jpg");
+  /*background-image: url("https://static1.squarespace.com/static/5486159de4b074841b303621/t/5913a4de6a49634ba5568356/1494459632534/");*/
+  background-size: cover;
+  background-position: center center;
+  height: 450px;
+  width: 100%;
+}
+#banner .content h1 {
+  color: #ffffff;
+  font-size: 50px;
+  border: 3px dotted white;
+  font-family: "Raleway", sans-serif;
+  text-align: center;
+  position: relative;
+  top: 100px;
+  width: auto;
+  min-width: 350px;
+  max-width: 450px;
+  margin: 0 auto;
+}
+#date {
+  font-family: 'Raleway', sans-serif;
+  margin: 5px 0 5px 5px;
+  color: #615652;
+  font-size: 16px;
+  font-weight: 400;
+}
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+  -webkit-animation: fadeEffect 1s;
+  animation: fadeEffect 1s; 
+}
+@-webkit-keyframes fadeEffect {
+  from {opacity: 0.2;}
+  to {opacity: 1;}
+}
+@keyframes fadeEffect {
+  from {opacity: 0.2;}
+  to {opacity: 1;}
+}
+::-webkit-scrollbar {
+  width: 8px;
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: LightGrey;
+}
+#banner .content h1, .navbar p {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor:default;
+}
+
