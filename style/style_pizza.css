@@ -5,6 +5,7 @@ body {
     background-image: url("../images/pizza/old_paper_background.jpg");
     background-size: cover;
     overflow: scroll;
+    overflow-x: hidden;
     text-align: center;
     font-family: "Raleway", sans-serif;
 }
