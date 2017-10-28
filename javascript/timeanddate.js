@@ -1,3 +1,4 @@
+//gets the current date and time
 function getDate() {
     let today = new Date();
     let year = today.getFullYear();

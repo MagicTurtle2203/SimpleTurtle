@@ -19,6 +19,70 @@ body {
     z-index: 2;
     left: 0;
 }
+.down {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+}
+.dropdown .dropbtn {
+    position: relative;
+    font-size: 18px;
+    font-weight: 400;
+    outline: none;
+    border: none;
+    border-left: 1px solid lightgrey;
+    border-right: 1px solid LightGrey;
+    color: #000000;
+    width: 50%;
+    height: 50px;
+    margin-top: 25px;
+    padding: 14px 16px;
+    background-color: #f9f9f9;
+}
+.dropdown:hover .dropbtn {
+    background-color: red;
+}
+.dropbtn span {
+    float: right;
+}
+.dropbtn span i {
+    border: solid black;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 5px;
+}
+.dropdown-content {
+    display: none;
+    position: fixed;
+    left: 25%;
+    background-color: #f9f9f9;
+    width: 50%;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 3;
+}
+.dropdown-content button{
+    background-color: inherit;
+    color: black;
+    display: block;
+    float: none;
+    border: 1px solid LightGrey;
+    width: 100%;
+    text-align: center;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-size: 17px;
+}
+.dropdown-content a {
+    text-decoration: none;
+    color: #000000;
+}
+.dropdown-content button:hover{
+    background-color: #ddd;
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
 #pizza {
     background-image: url("../images/pizza_icon.png");
     background-size: cover;
@@ -91,12 +155,12 @@ div.PizzaBanner h1 {
     margin: 0 auto;
     text-shadow: 2px 2px 2px rgba(0, 0, 0, 1);
 }
-body span {
+body #red-line {
     text-align: center;
     display: inline-block;
     position: relative;
 }
-body span:before, body span:after {
+body #red-line:before, body #red-line:after {
     content: "";
     position: absolute;
     top: 50%;
@@ -104,11 +168,11 @@ body span:before, body span:after {
     height: 1px;
     background: red;
 }
-body span:before {
+body #red-line:before {
     right: 100%;
     margin-right: 15px;
 }
-body span:after {
+body #red-line:after {
     left: 100%;
     margin-left: 15px;
 }

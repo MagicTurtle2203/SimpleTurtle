@@ -204,7 +204,6 @@ div.about_mainbody button {
 }
 #banner {
   background-image: url("../images/Baby_turtle.jpg");
-  /*background-image: url("https://static1.squarespace.com/static/5486159de4b074841b303621/t/5913a4de6a49634ba5568356/1494459632534/");*/
   background-size: cover;
   background-position: center center;
   height: 450px;
