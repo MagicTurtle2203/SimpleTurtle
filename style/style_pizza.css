@@ -122,6 +122,7 @@ body p {
 .columns-3 {
     display: inline-block;
     column-count: 3;
+    column-width: 100px;
 }
 .product-list {
     margin: 10px 0;
@@ -131,7 +132,7 @@ body p {
 }
 .product-list h3 {
     text-align: center;
-    width: 385px;
+    width: 100%;
 }
 .product-list h3 a {
     text-decoration: none;
@@ -141,8 +142,8 @@ body p {
     color: red;
 }
 .product-list img {
-    width: 385px;
-    height: 194px;
+    max-width: 100%;
+    max-height: auto;
     position: relative;
     -webkit-transition: top ease 0.8s;
     transition: top ease 0.3s;
