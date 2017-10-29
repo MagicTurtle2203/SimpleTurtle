@@ -60,7 +60,6 @@
         e.preventDefault();
         var targetUrl = $(this).html().replace(/\s+/g, '').toLowerCase(),
             targetTitle = $(this).attr('class');
-        alert(targetUrl);
         window.history.replaceState({url: "" + targetUrl + ""}, targetTitle, "pizza_info.html#"+targetUrl);
         
     });
