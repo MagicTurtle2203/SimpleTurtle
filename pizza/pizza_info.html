@@ -47,6 +47,9 @@
 <script>
     const URL = window.location.href;
     let pizzaName = URL.substr(URL.lastIndexOf('#') + 1);
+    $(document).ready(function () {
+        openTab(event, pizzaName);
+    }); 
     function openTab(evt, tabName) {
         let i, tabcontent, tablinks;
         tabcontent = document.getElementsByClassName("tabcontent");
@@ -61,7 +64,7 @@
         document.getElementById(tabName).style.display = "block";
         evt.currentTarget.className += " active";
         evt.currentTarget.setAttribute("id", "hidden");
-        document.getElementById("button-text").innerHTML = getName[tabName] + '<span><i class="arrow down"></i></span>';
+        document.getElementById("button-text").innerHTML = getName[tabName];
     }
     let getName = {
         pepperoni: "Pepperoni",
@@ -71,9 +74,5 @@
         cheese: "Cheese",
         alfredo: "Alfredo"
     }
-    $(document).ready(function () {
-        openTab(event, pizzaName);
-        document.getElementsByClassName("active").innerHTML = "Pizza";
-    }); 
 </script>
 </html>
