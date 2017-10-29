@@ -46,10 +46,24 @@
 </body>
 <script>
     const URL = window.location.href;
+    let pizzas = ["pepperoni", "meateater", "supreme", "veggie", "cheese", "alfredo"]
     let pizzaName = URL.substr(URL.lastIndexOf('#') + 1);
     $(document).ready(function () {
         openTab(event, pizzaName);
     }); 
+    $(window).bind("load", function() {
+        if (pizzas.indexOf(pizzaName) !== -1) {
+            document.getElementById("button-text").innerHTML = getName[pizzaName];
+        }
+    });
+    $('.tablinks').click(function(e){
+        e.preventDefault();
+        var targetUrl = $(this).html().replace(/\s+/g, '').toLowerCase(),
+            targetTitle = $(this).attr('class');
+        alert(targetUrl);
+        window.history.pushState({url: "" + targetUrl + ""}, targetTitle, targetUrl);
+        
+    });
     function openTab(evt, tabName) {
         let i, tabcontent, tablinks;
         tabcontent = document.getElementsByClassName("tabcontent");
