@@ -61,7 +61,7 @@
         var targetUrl = $(this).html().replace(/\s+/g, '').toLowerCase(),
             targetTitle = $(this).attr('class');
         alert(targetUrl);
-        window.history.pushState({url: "" + targetUrl + ""}, targetTitle, "pizza_info.html#"+targetUrl);
+        window.history.replaceState({url: "" + targetUrl + ""}, targetTitle, "pizza_info.html#"+targetUrl);
         
     });
     function openTab(evt, tabName) {
