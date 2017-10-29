@@ -7,6 +7,7 @@
     <title>Rafferty's Pizza</title>
     <link href="../style/style_pizza.css" type="text/css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Droid+Sans|Raleway|Kaushan+Script:100,400,500,600,800" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
 <body>
     <div class="navbar">
@@ -14,7 +15,7 @@
         <input title="Main Page" class="homebutton" type="button" onclick="window.location.href='../index.html'" value="" />
     </div>
     <div class="dropdown">
-        <button class="dropbtn">placeholder<span><i class="arrow down"></i></span></button>
+        <button class="dropbtn" id="button-text">Choose your pizza!<span><i class="arrow down"></i></span></button>
         <div class="dropdown-content">
             <button class="tablinks" onclick="openTab(event, 'pepperoni')">Pepperoni</button>
             <button class="tablinks" onclick="openTab(event, 'meateater')">Meat Eater</button>
@@ -44,20 +45,35 @@
     </div>
 </body>
 <script>
+    const URL = window.location.href;
+    let pizzaName = URL.substr(URL.lastIndexOf('#') + 1);
     function openTab(evt, tabName) {
-            var i, tabcontent, tablinks;
-            tabcontent = document.getElementsByClassName("tabcontent");
-            for (i = 0; i < tabcontent.length; i++) {
-                tabcontent[i].style.display = "none";
-            }
-            tablinks = document.getElementsByClassName("tablinks");
-            for (i = 0; i < tablinks.length; i++) {
-                tablinks[i].className = tablinks[i].className.replace(" active", "");
-                tablinks[i].removeAttribute("id")
-            }
-            document.getElementById(tabName).style.display = "block";
-            evt.currentTarget.className += " active";
-            evt.currentTarget.setAttribute("id", "hidden");
+        let i, tabcontent, tablinks;
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
         }
+        tablinks = document.getElementsByClassName("tablinks");
+        for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" active", "");
+            tablinks[i].removeAttribute("id")
+        }
+        document.getElementById(tabName).style.display = "block";
+        evt.currentTarget.className += " active";
+        evt.currentTarget.setAttribute("id", "hidden");
+        document.getElementById("button-text").innerHTML = getName[tabName] + '<span><i class="arrow down"></i></span>';
+    }
+    let getName = {
+        pepperoni: "Pepperoni",
+        meateater: "Meat Eater",
+        supreme: "Supreme",
+        veggie: "Veggie",
+        cheese: "Cheese",
+        alfredo: "Alfredo"
+    }
+    $(document).ready(function () {
+        openTab(event, pizzaName);
+        document.getElementsByClassName("active").innerHTML = "Pizza";
+    }); 
 </script>
 </html>

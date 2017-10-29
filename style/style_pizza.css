@@ -19,6 +19,18 @@ body {
     z-index: 2;
     left: 0;
 }
+.navbar p {
+    position: relative;
+    float: left;
+    text-align: left;
+    display: inline-block;
+    padding: 15px 53px;
+    font-family: "Droid Sans", sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    color: black;
+    letter-spacing: 0.02em;
+}
 .down {
     transform: rotate(45deg);
     -webkit-transform: rotate(45deg);
@@ -29,14 +41,14 @@ body {
     font-weight: 400;
     outline: none;
     border: none;
-    border-left: 1px solid lightgrey;
-    border-right: 1px solid LightGrey;
+    border: 1px solid lightgrey;
     color: #000000;
     width: 50%;
     height: 50px;
     margin-top: 25px;
     padding: 14px 16px;
     background-color: #f9f9f9;
+    z-index: 2;
 }
 .dropdown:hover .dropbtn {
     background-color: red;
@@ -51,6 +63,7 @@ body {
     padding: 5px;
 }
 .dropdown-content {
+    float: none;
     display: none;
     position: fixed;
     left: 25%;
@@ -63,7 +76,6 @@ body {
     background-color: inherit;
     color: black;
     display: block;
-    float: none;
     border: 1px solid LightGrey;
     width: 100%;
     text-align: center;
@@ -83,6 +95,19 @@ body {
 .dropdown:hover .dropdown-content {
     display: block;
 }
+.tabcontent {
+    display: none;
+    -webkit-animation: fadeEffect 0.3s;
+    animation: fadeEffect 0.3s; 
+}
+@-webkit-keyframes fadeEffect {
+    from {opacity: 0.1;}
+    to {opacity: 1;}
+}
+@keyframes fadeEffect {
+    from {opacity: 0.1;}
+    to {opacity: 1;}
+}
 #pizza {
     background-image: url("../images/pizza_icon.png");
     background-size: cover;
@@ -93,18 +118,6 @@ body {
     display: inline-box;
     left: 8px;
     top: 8px;
-}
-.navbar p {
-    position: relative;
-    float: left;
-    text-align: left;
-    display: inline-block;
-    padding: 15px 53px;
-    font-family: "Droid Sans", sans-serif;
-    font-weight: 600;
-    font-size: 16px;
-    color: black;
-    letter-spacing: 0.02em;
 }
 .homebutton {
     float: right;
