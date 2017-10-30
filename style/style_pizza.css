@@ -238,11 +238,11 @@ body p {
 .tabcontent p {
     position: relative;
     top: -80px;
-    font-family: "Raleway", sans-serif;
+    font-family: "Source Sans pro", sans-serif;
     font-size: 20px;
-    font-weight: 800;
+    font-weight: 600;
     line-height: 1.3em;
-    letter-spacing: 0.07em;
+    letter-spacing: 0.05em;
     color: black;
 }
 div.PizzaBanner h1 {
