@@ -223,8 +223,9 @@ body p {
     margin-top: 25px;
     width: auto;
     height: 400px;
-    -webkit-animation: fadeEffect 1s;
-    animation: fadeEffect 1s;
+    -webkit-animation: slideLeft 0.2s ease-out;
+    animation: slideLeft 0.2s ease-out;
+    visibility: visible
 }
 .tabcontent h1 {
     position: relative;
@@ -245,13 +246,13 @@ body p {
     color: black;
 }
 div.PizzaBanner h1 {
-      -webkit-touch-callout: none;
-      -webkit-user-select: none;
-      -khtml-user-select: none;
-      -moz-user-select: none;
-      -ms-user-select: none;
-      user-select: none;
-      cursor:default;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    cursor:default;
 }
 @-webkit-keyframes fadeEffect {
     from {opacity: 0;}
@@ -260,4 +261,18 @@ div.PizzaBanner h1 {
 @keyframes fadeEffect {
     from {opacity: 0;}
     to {opacity: 1;}
+}
+@keyframes slideLeft {
+	0% {transform: translateX(150%);}
+	50%{transform: translateX(-8%);}
+	65%{transform: translateX(4%);}
+	95%{transform: translateX(2%);}			
+	100% {transform: translateX(0%);}
+}
+@-webkit-keyframes slideLeft {
+	0% {-webkit-transform: translateX(150%);}
+	50%{-webkit-transform: translateX(-8%);}
+	65%{-webkit-transform: translateX(4%);}
+	95%{-webkit-transform: translateX(2%);}			
+	100% {-webkit-transform: translateX(0%);}
 }
