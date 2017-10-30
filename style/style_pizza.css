@@ -31,10 +31,6 @@ body {
     color: black;
     letter-spacing: 0.02em;
 }
-.down {
-    transform: rotate(45deg);
-    -webkit-transform: rotate(45deg);
-}
 .dropbtn {
     background-color: #ffffff;
     color: #000000;
@@ -97,17 +93,7 @@ body {
     background-color: red;
 }
 .tabcontent {
-    display: none;
-    -webkit-animation: fadeEffect 0.3s;
-    animation: fadeEffect 0.3s; 
-}
-@-webkit-keyframes fadeEffect {
-    from {opacity: 0.1;}
-    to {opacity: 1;}
-}
-@keyframes fadeEffect {
-    from {opacity: 0.1;}
-    to {opacity: 1;}
+    display: none; 
 }
 #pizza {
     background-image: url("../images/pizza_icon.png");
@@ -119,13 +105,8 @@ body {
     display: inline-box;
     left: 8px;
     top: 8px;
-}
-.homebutton {
-    float: right;
-    overflow: hidden;
-    display: inline-block;
-}
-.homebutton {
+}  
+.homebutton, .homebutton-pizza {
     font-size: 18px;
     font-weight: 400;
     outline: none;
@@ -138,15 +119,21 @@ body {
     padding: 14px 16px;
     background-color: inherit;
     cursor: pointer;
-}
-.homebutton:hover {
-    background-color: red;
-}
-.homebutton {
-    background-image: url("../images/home_icon.png");
+    float: right;
+    overflow: hidden;
+    display: inline-block;
     background-size: 30px 30px;
     background-repeat: no-repeat;
     background-position: center center;
+}
+.homebutton:hover, .homebutton-pizza:hover {
+    background-color: red;
+}
+.homebutton {
+    background-image: url("../images/turtle_icon.png");
+}
+.homebutton-pizza {
+    background-image: url("../images/home_icon.png");
 }
 div.PizzaBanner {
     margin: none;
@@ -226,9 +213,36 @@ body p {
     -webkit-transition: top ease 0.8s;
     transition: top ease 0.3s;
     top: 0;
+    -webkit-animation: fadeEffect 0.5s;
+    animation: fadeEffect 0.5s;
 }
 .product-list img:hover {
     top: -15px;
+}
+.pizza-image {
+    margin-top: 25px;
+    width: auto;
+    height: 400px;
+    -webkit-animation: fadeEffect 1s;
+    animation: fadeEffect 1s;
+}
+.tabcontent h1 {
+    position: relative;
+    top: -50px;
+    font-family: "Caveat", cursive;
+    font-size: 72px;
+    font-weight: 700;
+    color: rgb(223, 20, 20);
+}
+.tabcontent p {
+    position: relative;
+    top: -80px;
+    font-family: "Raleway", sans-serif;
+    font-size: 20px;
+    font-weight: 800;
+    line-height: 1.3em;
+    letter-spacing: 0.08em;
+    color: black;
 }
 div.PizzaBanner h1 {
       -webkit-touch-callout: none;
@@ -238,4 +252,12 @@ div.PizzaBanner h1 {
       -ms-user-select: none;
       user-select: none;
       cursor:default;
-  }
+}
+@-webkit-keyframes fadeEffect {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+@keyframes fadeEffect {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}

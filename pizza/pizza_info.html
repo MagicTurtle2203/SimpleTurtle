@@ -6,13 +6,13 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Rafferty's Pizza</title>
     <link href="../style/style_pizza.css" type="text/css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Droid+Sans|Raleway|Kaushan+Script:100,400,500,600,800" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Droid+Sans|Raleway|Caveat:100,400,500,600,700,800" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
 <body>
     <div class="navbar">
         <div id="pizza"></div><p>Rafferty's Pizza</p>
-        <input title="Main Page" class="homebutton" type="button" onclick="window.location.href='../index.html'" value="" />
+        <input title="Main Page" class="homebutton-pizza" type="button" onclick="window.location.href='./menu.html'" value="" />
     </div>
     <div class="dropdown">
         <button class="dropbtn" id="button-text">Choose your pizza!<span><i class="arrow down"></i></span></button>
@@ -26,22 +26,52 @@
         </div>
     </div>
     <div id="pepperoni" class="tabcontent">
-        <img src="../images/pizza/pizza_trad_pepperoni_sm.png">
+        <img class="pizza-image" src="../images/pizza/pizza_trad_pepperoni.png">
+        <h1>Pepperoni</h1>
+        <p>C’mon… you gotta love original pepperoni! 
+            Nothing says pizza quite like thin slices of pepperoni,
+            evenly shuffled across a spread of tomato sauce under delicious 100% real cheese surrounded by a traditional garlic buttery crust. 
+            I mean, this is what pizza’s all about #amirite?</p>
     </div>
     <div id="meateater" class="tabcontent">
-        <img src="../images/pizza/pizza_trad_meateater_sm.png">
+        <img class="pizza-image" src="../images/pizza/pizza_trad_meateater.png">
+        <h1>Meat Eater</h1>
+        <p>What are you looking at? Do we have a problem here?
+            Why don’t you just move along and add a little pep to your step, because we have no beef with you.
+            Okay, we’ll stop with the word play. (Sorry for being such a ham.)
+            It’s just that our Meat Eater has got a lot going for it – 100% real cheese, pepperoni, ham, beef, sausage.
+            It’s a meat lover’s dream come true.</p>
     </div>
     <div id="supreme" class="tabcontent">
-        <img src="../images/pizza/pizza_trad_supreme_sm.png">
+        <img class="pizza-image" src="../images/pizza/pizza_trad_supreme.png">
+        <h1>Supreme</h1>
+        <p>For those who like to step things up to the max, our Surpreme is just for you.
+            Unlimited amounts of savory pepperoni, beef, sausage and just the right amount red onions, green peppers, mushrooms…
+            whew, had to a take a breath there… 
+            all wonderfully resting on 100% real cheese. 
+            We should probably just stop talking and dig right in.</p>
     </div>
     <div id="veggie" class="tabcontent">
-        <img src="../images/pizza/pizza_trad_veggie_sm.png">
+        <img class="pizza-image" src="../images/pizza/pizza_trad_veggie.png">
+        <h1>Veggie</h1>
+        <p>Do you like living on the “vedge?”
+            Our Veggie recipe is perfect for those who love all the colors of the vegetable spectrum –
+            tomato sauce, 100% real cheese, red onions, green peppers, mushrooms and black olives.
+            I think we’re done here. Nom-nom-nom.</p>
     </div>
     <div id="cheese" class="tabcontent">
-        <img src="../images/pizza/pizza_trad_cheese_sm.png">
+        <img class="pizza-image" src="../images/pizza/pizza_trad_cheese.png">
+        <h1>Cheese</h1>
+        <p>Hey look, we get it. Sometimes going “au natural” just feels right, and we can’t blame you. 
+            Especially when that means delighting yourself to a slice of our Cheese pizza with
+            tomato sauce, 100% real cheese, traditional garlic buttery crust, and… well, that’s it. Ah, it’s so liberating!</p>
     </div>
     <div id="alfredo" class="tabcontent">
-        <img src="../images/pizza/pizza_trad_alfredo_sm.png">
+        <img class="pizza-image" src="../images/pizza/pizza_trad_alfredo.png">
+        <h1>Alfredo</h1>
+        <p>Let’s brighten things up a little bit, shall we? 
+            When you like 100% real cheese and LOVE creamy Alfredo sauce, our Alfredo recipe hits the spot. 
+            Give tomato the day off and go for a different sauce spread onto a crust with traditional garlic butter.</p>
     </div>
 </body>
 <script>
