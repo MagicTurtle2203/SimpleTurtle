@@ -25,15 +25,16 @@ body {
     left: 8px;
     top: 8px;
 }
-.navbar p {
+.navbar a {
     text-align: center;
     display: inline-block;
-    padding: 0 53px;
+    padding: 15px 53px;
     font-family: "Droid Sans", sans-serif;
     font-weight: 600;
     font-size: 16px;
     color: black;
     letter-spacing: 0.02em;
+    text-decoration: none;
 }
 .navbar input {
     float: right;

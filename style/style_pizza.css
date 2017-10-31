@@ -19,17 +19,18 @@ body {
     z-index: 2;
     left: 0;
 }
-.navbar p {
+.navbar a {
     position: relative;
     float: left;
     text-align: left;
-    display: inline-block;
+    display: block;
     padding: 15px 53px;
     font-family: "Droid Sans", sans-serif;
     font-weight: 600;
     font-size: 16px;
     color: black;
     letter-spacing: 0.02em;
+    text-decoration: none;
 }
 .dropbtn {
     background-color: #ffffff;
@@ -121,7 +122,7 @@ body {
     cursor: pointer;
     float: right;
     overflow: hidden;
-    display: inline-block;
+    display: block;
     background-size: 30px 30px;
     background-repeat: no-repeat;
     background-position: center center;
@@ -223,8 +224,8 @@ body p {
     margin-top: 25px;
     width: auto;
     height: 400px;
-    -webkit-animation: slideLeft 0.2s ease-out;
-    animation: slideLeft 0.2s ease-out;
+    -webkit-animation: slideLeft 0.3s ease-out;
+    animation: slideLeft 0.3s ease-out;
     visibility: visible
 }
 .tabcontent h1 {
@@ -245,7 +246,40 @@ body p {
     letter-spacing: 0.05em;
     color: black;
 }
-div.PizzaBanner h1 {
+#order-button {
+    background-color: #ffffff;
+    color: #000000;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    width: 15%;
+    text-align: center;
+    display: none;
+    left: 0;
+}
+#order-button:after {
+    content: "";
+    width:0px;
+    height:0px;
+    border-bottom:7px solid transparent;
+    border-top:7px solid transparent;
+    border-left:7px solid #000000;
+    position: absolute;
+    right: 43%;
+    margin-right: 15px;
+}
+#order-button:hover {
+    background-color: red;
+}
+#order-button a {
+    text-decoration: none;
+    color: black;
+}
+#apology {
+    display: none;
+}
+div.PizzaBanner h1, #hidden {
     -webkit-touch-callout: none;
     -webkit-user-select: none;
     -khtml-user-select: none;

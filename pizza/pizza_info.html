@@ -11,8 +11,8 @@
 </head>
 <body>
     <div class="navbar">
-        <div id="pizza"></div><p>Rafferty's Pizza</p>
-        <input title="Main Page" class="homebutton-pizza" type="button" onclick="window.location.href='./menu.html'" value="" />
+        <div id="pizza"></div><a href="./menu.html">Rafferty's Pizza</a>
+        <input title="Main Page" class="homebutton" type="button" onclick="window.location.href='../index.html'" value="" />
     </div>
     <div class="dropdown">
         <button class="dropbtn" id="button-text">Choose your pizza!<span><i class="arrow down"></i></span></button>
@@ -73,6 +73,8 @@
             When you like 100% real cheese and LOVE creamy Alfredo sauce, our Alfredo recipe hits the spot. 
             Give tomato the day off and go for a different sauce spread onto a crust with traditional garlic butter.</p>
     </div>
+    <button id="order-button"><a href="#">Order Now</a></button>
+    <h1 id="apology">We are not taking orders at this moment, sorry for the inconvenience.</h1>
 </body>
 <script>
     const URL = window.location.href;
@@ -84,14 +86,20 @@
     $(window).bind("load", function() {
         if (pizzas.indexOf(pizzaName) !== -1) {
             document.getElementById("button-text").innerHTML = getName[pizzaName];
+            document.getElementById("order-button").style.display = "inline-block";
         }
+        $("#order-button").click(function(){
+            $(".tabcontent").fadeOut("normal", function(){
+                $("#apology").fadeIn("fast");  
+            });
+            document.getElementById("order-button").style.display = "none";
+        });
     });
     $('.tablinks').click(function(e){
         e.preventDefault();
         var targetUrl = $(this).html().replace(/\s+/g, '').toLowerCase(),
             targetTitle = $(this).attr('class');
         window.history.replaceState({url: "" + targetUrl + ""}, targetTitle, "pizza_info.html#"+targetUrl);
-        
     });
     function openTab(evt, tabName) {
         let i, tabcontent, tablinks;
@@ -108,6 +116,8 @@
         evt.currentTarget.className += " active";
         evt.currentTarget.setAttribute("id", "hidden");
         document.getElementById("button-text").innerHTML = getName[tabName];
+        document.getElementById("order-button").style.display = "inline-block";
+        document.getElementById("apology").style.display = "none";
     }
     let getName = {
         pepperoni: "Pepperoni",
