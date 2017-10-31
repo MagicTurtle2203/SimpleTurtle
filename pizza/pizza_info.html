@@ -25,6 +25,7 @@
             <button class="tablinks" onclick="openTab(event, 'alfredo')">Alfredo</button>
         </div>
     </div>
+    <h1 id="apology">We are not taking orders at this moment, sorry for the inconvenience.</h1>
     <div id="pepperoni" class="tabcontent">
         <img class="pizza-image" src="../images/pizza/pizza_trad_pepperoni.png">
         <h1>Pepperoni</h1>
@@ -74,7 +75,6 @@
             Give tomato the day off and go for a different sauce spread onto a crust with traditional garlic butter.</p>
     </div>
     <button id="order-button"><a href="#">Order Now</a></button>
-    <h1 id="apology">We are not taking orders at this moment, sorry for the inconvenience.</h1>
 </body>
 <script>
     const URL = window.location.href;
@@ -90,7 +90,7 @@
         }
         $("#order-button").click(function(){
             $(".tabcontent").fadeOut("normal", function(){
-                $("#apology").fadeIn("fast");  
+                $("#apology").fadeIn("normal");  
             });
             document.getElementById("order-button").style.display = "none";
         });
